@@ -1,0 +1,125 @@
+FORMULARIO
+- Envio de formulario vacio
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ No rellenar ningún campo
+	+ Pulsar el botón "Enviar formulario"
+	
+	Resultado esperado: No se envia ningún formulario, los campos obligatorios
+	se remarcan en rojo y sobre el botón "Enviar formulario" aparece el texto
+	"Campo requerido".
+	
+- Nombre inválido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo nombre con un nombre inválido con caracteres especiales
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: El campo nombre se remarca en rojo y debajo de éste aparece
+	el texto de "Nombre inválido"
+
+- Nombre válido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo nombre con un nombre válido
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún mensaje de error sobre el nombre	
+	
+- Apellidos inválido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo apellido con un apellido inválido con caracteres especiales
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: El campo apellido se remarca en rojo y debajo de éste aparece
+	el texto de "Apellido inválido"
+
+- Apellidos válido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo apellido con un apellido válido
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún mensaje de error sobre el apellido
+	
+- Correo electrónico inválido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo de correo electrónico con un correo erróneo
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: El campo correo electrónico se remarca en rojo y debajo de
+	éste aparece el texto de "Correo electrónico inválido"
+	
+- Correo electrónico válido despues de uno inválido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo de correo electrónico con un correo erróneo
+	+ Pulsar el botón de "Enviar formulario"
+	+ Rellenar el campo electrónico con un correo valido
+	
+	Resultado esperado: Con el email inválido el campo correo electrónico se remarca 
+	en rojo y debajo de éste aparece el texto de "Correo electrónico inválido", con el
+	email válido desaparece el remarque rojo y el texto "Correo electrónico inválido".
+	
+- Correo electrónico valido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo electrónico con un correo valido
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún mensaje de error sobre el correo electrónico
+	
+- Número de teléfono inválido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo Número de teléfono con un Número de teléfono inválido con caracteres
+	  alfanuméricos y especiales
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: El campo Número de teléfono se remarca en rojo y debajo de éste aparece
+	el texto de "Número de teléfono inválido"
+
+- Número de teléfono válido
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo Número de teléfono con un Número de teléfono válido, solo caracteres
+	  numéricos y longitud mínima de 9 caracteres.
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún mensaje de error sobre el Número de teléfono
+		
+- Consulta inválida
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ No rellenar el campo consulta
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: El campo consilta se remarca en rojo
+
+- Consulta válida
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar el campo Consulta
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún mensaje de error sobre el Número de teléfono
+	
+- Envio de formulario correcto sin aceptar los terminos de uso y privacidad
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar todos los campos sin error
+	+ No marcar el checkbox de aceptación de los términos de uso u la política de privacidad
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: Debajo del checkbox aparece el texto de "Campo requerido"
+	
+- Envio de formulario correcto aceptando los terminos de uso y privacidad
+	+ Acceder a la web "https://www.innocv.com/contacto"
+	+ Hacer scroll hasta identificar el formulario
+	+ Rellenar todos los campos sin error
+	+ Marcar el checkbox de aceptación de los términos de uso u la política de privacidad
+	+ Pulsar el botón de "Enviar formulario"
+	
+	Resultado esperado: No aparece ningún error y el formulario se envia correctamente

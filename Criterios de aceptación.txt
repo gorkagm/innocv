@@ -1,0 +1,65 @@
+Escenario: Envío de un mensaje exitoso
+Dado que el usuario ha completado todos los campos obligatorios correctamente
+Cuando el usuario hace clic en el botón "Enviar formulario"
+Entonces debería ver un mensaje de confirmación de envío exitoso
+
+Escenario: Validación de campos obligatorios
+Dado que el usuario intenta enviar el formulario sin completar todos los campos obligatorios
+Cuando el usuario hace clic en el botón "Enviar formulario"
+Entonces debería ver mensajes de error indicando qué campos son obligatorios
+Y no debería poder enviar el formulario hasta que todos los campos obligatorios estén completos
+	
+Escenario: Formato del nombre válido
+Dado que el usuario ingresa un nombre en el campo correspondiente
+Cuando el nombre tiene un formato válido
+Entonces el usuario debería poder enviar el formulario correctamente
+
+Escenario: Formato del nombre inválido
+Dado que el usuario ingresa un nombre en el campo correspondiente
+Cuando el nombre tiene un formato inválido
+Entonces el usuario debería ver un mensaje de error indicando que el nombre es inválido
+Y no debería poder enviar el formulario hasta que se proporcione un nombre válido
+
+Escenario: Formato del apellido válido
+Dado que el usuario ingresa un apellido en el campo correspondiente
+Cuando el apellido tiene un formato válido
+Entonces el usuario debería poder enviar el formulario correctamente
+
+Escenario: Formato del apellido inválido
+Dado que el usuario ingresa un apellido en el campo correspondiente
+Cuando el apellido tiene un formato inválido
+Entonces el usuario debería ver un mensaje de error indicando que el apellido es inválido
+Y no debería poder enviar el formulario hasta que se proporcione un apellido válido
+
+Escenario: Formato de correo electrónico válido
+Dado que el usuario ingresa una dirección de correo electrónico en el campo correspondiente
+Cuando la dirección de correo electrónico tiene un formato válido
+Entonces el usuario debería poder enviar el formulario correctamente
+
+Escenario: Formato de correo electrónico inválido
+Dado que el usuario ingresa una dirección de correo electrónico en el campo correspondiente
+Cuando la dirección de correo electrónico tiene un formato inválido
+Entonces el usuario debería ver un mensaje de error indicando que la dirección de correo electrónico es inválida
+Y no debería poder enviar el formulario hasta que se proporcione una dirección de correo electrónico válida
+
+Escenario: Formato del número de teléfono válido
+Dado que el usuario ingresa un número de teléfono en el campo correspondiente
+Cuando el número de teléfono tiene un formato válido
+Entonces el usuario debería poder enviar el formulario correctamente
+
+Escenario: Formato del número de teléfono inválido
+Dado que el usuario ingresa un número de teléfono en el campo correspondiente
+Cuando el número de teléfono tiene un formato inválido
+Entonces el usuario debería ver un mensaje de error indicando que el número de teléfono es inválido
+Y no debería poder enviar el formulario hasta que se proporcione un número de teléfono válido
+
+Escenario: Términos de uso y privacidad aceptados
+Dado que el usuario acepta los términos de uso y privacidad
+Cuando el checkbos está activo
+Entonces el usuario debería poder enviar el formulario correctamente
+
+Escenario: Términos de uso y privacidad no aceptados
+Dado que el usuario no acepta los términos de uso y privacidad
+Cuando el checkbos no está activo
+Entonces el usuario debería ver un mensaje de error indicando que el campo es obligatorio
+Y no debería poder enviar el formulario hasta que se acepten los terminos de uso y privacidad
